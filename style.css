@@ -171,7 +171,6 @@
   font-weight: 600;
   padding: 11px 20px;
   border: none;
-  cursor: pointer;
 }
 .first-button {
   background-color: rgba(84, 144, 245, 1);
@@ -268,7 +267,7 @@
   padding: 48px;
   margin-bottom: 24px;
 }
-.news-image {
+.satelite-image {
   aspect-ratio: 1.33;
   object-fit: contain;
   width: 408px;
@@ -284,7 +283,7 @@
   font-size: 32px;
   font-weight: 700;
 }
-.article-meta {
+.date-time {
   display: flex;
   margin-top: 12px;
   gap: 12px;
@@ -292,7 +291,7 @@
   font-size: 16px;
   color: rgba(14, 14, 14, 0.7);
 }
-.article-text {
+.news-text {
   margin-top: 12px;
   line-height: 24px;
   font-size: 16px;
@@ -306,16 +305,78 @@
   font-size: 18px;
   color: rgba(255, 255, 255, 1);
   font-weight: 600;
-  cursor: pointer;
+
   border: none;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+
+/* Donate section */
+.donation-container {
+  display: flex;
+  margin-top: 80px;
+  width: 1280px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  font-family: Fira Sans, sans-serif;
+}
+.header-section {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.donation-title {
+  color: rgba(14, 14, 14, 1);
+  font-size: 40px;
+  font-weight: 700;
+  align-self: start;
+}
+
+.description-text {
+  align-self: stretch;
+  width: 100%;
+  gap: 24px;
+}
+.amount-options {
+  display: flex;
+  margin-top: 32px;
+  align-items: center;
+  gap: 24px;
+  font-size: 40px;
+  color: rgba(14, 14, 14, 0.8);
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+.amount-box {
+  border-radius: 16px;
+  background-color: #fff;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0;
+  padding: 40px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  min-width: 240px;
+}
+.hover-box:hover {
+  background-color: rgba(198, 228, 214, 1);
+}
+
+.donate-button {
+  border-radius: 8px;
+  background-color: rgba(0, 106, 80, 1);
+  margin-top: 32px;
+  gap: 40px 48px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  padding: 17px 34px;
+  border: 1px solid rgba(14, 14, 14, 0.1);
 }
